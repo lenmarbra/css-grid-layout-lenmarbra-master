@@ -1,3 +1,9 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
 /* CSS Grid */
 
 * {
@@ -7,33 +13,19 @@
 body {
   font-family: 'Frutiger', 'Univers Lt Std', 'Arial Black', Helvetica, sans-serif;
   font-size: 18 px;
-  font-weight: 70;
   color: #070705;
   background-color: #E6E6E6;
   margin: -1px;
 }
 
-/* .wrapper{
-  width: 100%;
-  height: 820px;
-  margin: auto;
-  display: grid;
-  background-color: #E6E6E6;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 2fr 2fr;
-} */
-
 header {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row: 1;
-  padding: 30px 40px;
+  padding: 10px 20px;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
 }
 
 .logo{
-  grid-column-start: 1;
-  grid-row: 1;
-  /* padding: 30px 40px; */
   height: 60px;
   width: 90px;
 }
@@ -41,33 +33,63 @@ header {
 nav{
   display: inline-block;
   position: absolute;
-  margin: 10px 10px 20px 800px;
+  margin: 10px 10px 20px 900px;
   nav-left: auto;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+}
+
+.wrapper{
+  width: 70%;
+  height: 820px;
+  margin: 180px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-rows: 2fr 2fr 2fr;
+}
+
+.hero{
+  width: 90%;
+  height: 820px;
+  margin: 160px auto auto 130px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} 
+
+.heroimg{
+  height: 530px;
+  width: 490px;
 }
 
 a{
+  display: inline-block;
   color: #040402;
   margin: 20px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.container{
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  margin-top: 20px;
+.wrapper img{
+  height: 330px;
+  width: 290px;
 }
 
-img{
-  height: 530px;
-  width: 490px;
-}
-
-img:hover {
+img:hover{
   opacity: 70%;
   transition: .5s ease;
   background-color: rgba(193, 196, 196, 0.541);
 } 
 
+h3{
+  margin: 12px auto 4px auto;
+  text-transform: none;
+  font-weight: 500;
+}
+
+p{
+  margin-top: 4px;
+  font-weight: 200;
+}
 
