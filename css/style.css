@@ -1,1 +1,73 @@
 /* CSS Grid */
+
+* {
+  box-sizing: border-box;
+}
+  
+body {
+  font-family: 'Frutiger', 'Univers Lt Std', 'Arial Black', Helvetica, sans-serif;
+  font-size: 18 px;
+  font-weight: 70;
+  color: #070705;
+  background-color: #E6E6E6;
+  margin: -1px;
+}
+
+/* .wrapper{
+  width: 100%;
+  height: 820px;
+  margin: auto;
+  display: grid;
+  background-color: #E6E6E6;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
+} */
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+  padding: 30px 40px;
+}
+
+.logo{
+  grid-column-start: 1;
+  grid-row: 1;
+  /* padding: 30px 40px; */
+  height: 60px;
+  width: 90px;
+}
+
+nav{
+  display: inline-block;
+  position: absolute;
+  margin: 10px 10px 20px 800px;
+  nav-left: auto;
+}
+
+a{
+  color: #040402;
+  margin: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.container{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+img{
+  height: 530px;
+  width: 490px;
+}
+
+img:hover {
+  opacity: 70%;
+  transition: .5s ease;
+  background-color: rgba(193, 196, 196, 0.541);
+} 
+
+
